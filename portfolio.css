@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lora:ital@1&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,500&family=Roboto:wght@100;300;400&family=Shantell+Sans:ital,wght@0,400;1,300&family=Tajawal:wght@500&family=Ubuntu:ital@1&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header{
+  background-color: rgb(15 116 143 / 50%);
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+}
+
+.logo{
+  font-size: 1.8em;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+.logo:hover{
+  color: #fff;
+}
+
+.navigation a{
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: 500;
+  color:#fff ;
+  padding-left:30px ;
+}
+.navigation a:hover{
+color: #fff;
+}
+
+section{
+  padding: 100px 200px;
+}
+.main{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(images/stats.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.main .overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 30%);
+}
+.main .about-me{
+background-color: rgb(15 116 143 / 80%);
+padding: 50px;
+position: absolute;
+top: 50%;
+left: 0;
+width: 50%;
+transform: translatey(-50%);
+display: flex;
+justify-content: flex-end;
+flex-direction: column;
+line-height: 1.6;
+}
+.main .about-me h2{
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.main .about-me h2 span{
+  font-size: 1.6em;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 10px;
+}
+.main .about-me h3{
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-top: 10px ;
+  margin-bottom: 20px ;
+}
+.main .main-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 25px;
+  background-color: rgb(0 0 0 / 40%);
+  border-radius: 20px;
+  width: 200px;
+  font-size: 1.2em;
+  font-weight: 500;
+   text-align: center;
+   letter-spacing: 1px;
+   margin-bottom: 20px;
+   transition: 0.4s ease;
+   }
+   .main .main-btn:hover{
+    background-color:rgb(0 0 0 / 60%);
+    transform: scale(1.1);
+   }
+
+   .social-icons a i{
+    color: #fff;
+    font-size: 1.8em;
+    padding-right: 20px;
+   }
+   .title{
+    display: flex;
+    justify-content: center;
+    color: rgb(15 116 143 / 80%) ;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+   }
+   .content{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    
+   }
+   .content .card{
+    background-color: #fff;
+    width: 21.5em;
+    margin-right: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 25px;
+    transition: 0.4s ease;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 20%) ;
+   }
+   .content .card:hover{
+    transform: scale(1.1);
+   }
+   .card .icon{
+    color: rgb(15 116 143 / 80%);
+    font-size: 8em;
+    text-align: center;
+   }
+   .card .info{
+    text-align: center;
+   }
+   .card .info h3{
+     color: rgb(15 116 143 / 80%);
+     font-size: 1.3em;
+     font-weight: 600px;
+     margin: 10px;
+   }
+   .projects{
+    background-color:rgb(0 0 0 / 10%);
+
+   }
+    
+   .card-contact .icon{
+    font-size: 4.5em;
+   }
+   .footer{
+    background-color:rgb(0 0 0 / 10%);
+    color: rgb(15 116 143 / 60%);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+   }
+   .footer-title span{
+    color:rgb(15 116 143 / 100%) ;
+   }
+   .footer .icons{
+    margin-right: 20px;
+   }
+   .footer .icons a {
+    font-size: 2em;
+    padding: 10px;
+   }
+   @media(max-width:1023px){
+    header{
+      padding: 12px 20px;
+    }
+    .navigation a{
+      padding-left: 10px;
+    }
+    .title{
+      font-size: 1.1em;
+    }
+    section{
+      padding: 80px 20px;
+    }
+    .main .about-me{
+     width: 100%;
+    }
+    .main .about-me h2{
+      font-size: 1.3em;
+    }
+    .main .about-me h3{
+      font-size: 1.4em;
+    }
+    .content{
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer{
+      flex-direction: column;
+    }
+    .footer-title{
+      margin-bottom: 10px;
+    }
+   }
+  @media(max-width:767px){
+    header{
+flex-direction: column;
+    }
+  }
